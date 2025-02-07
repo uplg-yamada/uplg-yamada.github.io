@@ -1,78 +1,120 @@
-/* 全体のスタイル */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
-/* コンテナの設定 */
 .container {
-    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 0 20px;
 }
 
-/* ヘッダー */
 header {
-    background: #333;
-    color: white;
+    background-color: #222;
     padding: 20px 0;
+    text-align: center;
 }
 
 #logo {
-    width: 200px;
-    display: inline-block;
-    vertical-align: middle;
+    max-width: 200px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    display: inline-block;
-    margin-left: 50px;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    font-size: 18px;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
 }
 
-/* メインビジュアルの画像サイズ調整 */
-.main-visual img {
-    width: 80%; /* 幅を画面幅の80%に設定 */
-    max-width: 1000px; /* 最大幅を1000pxに制限 */
-    height: auto; /* 高さは自動で調整 */
-    display: block;
-    margin: 0 auto; /* 中央揃え */
-}
-
-/* 各セクション */
-.section-container {
-    padding: 40px 20px;
-    margin: 20px 0;
-    background-color: white;
+nav ul li a:hover {
+    background-color: #555;
     border-radius: 5px;
+}
+
+.main-visual img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section-container {
+    padding: 60px 20px;
+    background-color: #fff;
+    margin: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 h2 {
-    font-size: 2rem;
-    color: #333;
+    text-align: center;
+    font-size: 28px;
+    color: #222;
     margin-bottom: 20px;
 }
 
-/* フッター */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
 footer {
+    background-color: #222;
+    color: #fff;
     text-align: center;
-    background: #333;
-    color: white;
     padding: 20px 0;
+    margin-top: 20px;
 }
