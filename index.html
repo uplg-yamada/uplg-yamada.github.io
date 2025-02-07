@@ -10,12 +10,13 @@
     <!-- ヘッダー -->
     <header>
         <div class="container">
-            <img src="/.assets/ロゴ.jpg" alt="会社ロゴ" id="logo">
+            <img src="./assets/ロゴ.jpg" alt="会社ロゴ" id="logo">
             <nav>
                 <ul>
                     <li><a href="#about">会社概要</a></li>
                     <li><a href="#services">事業内容</a></li>
                     <li><a href="#works">施工実績</a></li>
+                    <li><a href="#recruit">採用情報</a></li>
                     <li><a href="#contact">お問い合わせ</a></li>
                 </ul>
             </nav>
@@ -24,31 +25,74 @@
 
     <!-- メインビジュアル -->
     <section class="main-visual">
-        <img src="/.images/工事中.jpg" alt="工事中の写真">
+        <img src="./images/工事中.jpg" alt="工事中の写真">
     </section>
 
     <!-- 会社概要 -->
     <section id="about" class="section-container">
         <h2>会社概要</h2>
-        <p>株式会社スターロードは、道路工事や鉄工業を専門とする会社です。</p>
+        <p>株式会社スターロードは、道路工事や鉄工業を専門とする企業です。創業以来、高品質な施工と確かな技術で多くの実績を築いてきました。</p>
+        <ul>
+            <li>会社名：株式会社スターロード</li>
+            <li>所在地：東京都中央区〇〇町1-2-3</li>
+            <li>設立：1990年</li>
+            <li>従業員数：150名</li>
+        </ul>
     </section>
 
     <!-- 事業内容 -->
     <section id="services" class="section-container">
         <h2>事業内容</h2>
-        <p>道路施工、橋梁工事、鉄骨加工などを行っています。</p>
+        <p>当社は以下の事業を展開しています：</p>
+        <ul>
+            <li>道路施工：舗装・補修工事</li>
+            <li>橋梁工事：設計・補強・塗装</li>
+            <li>鉄骨加工：製造・溶接・組立</li>
+        </ul>
     </section>
 
     <!-- 施工実績 -->
     <section id="works" class="section-container">
         <h2>施工実績</h2>
-        <p>これまでの施工事例をご紹介します。</p>
+        <p>当社が手がけた主な施工事例をご紹介します。</p>
+        <ul>
+            <li>〇〇高速道路の舗装工事（2023年）</li>
+            <li>△△大橋の耐震補強（2022年）</li>
+            <li>××ビルの鉄骨加工（2021年）</li>
+        </ul>
+    </section>
+
+    <!-- 採用情報 -->
+    <section id="recruit" class="section-container">
+        <h2>採用情報</h2>
+        <p>私たちと一緒に働きませんか？以下のフォームからご応募ください。</p>
+        <form action="submit.php" method="post">
+            <label for="position">応募種別：</label>
+            <select id="position" name="position">
+                <option value="技術職">技術職</option>
+                <option value="施工管理">施工管理</option>
+                <option value="事務職">事務職</option>
+            </select>
+            
+            <label for="name">氏名：</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">電話番号：</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="email">メールアドレス：</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="submit">応募する</button>
+        </form>
     </section>
 
     <!-- お問い合わせ -->
     <section id="contact" class="section-container">
         <h2>お問い合わせ</h2>
-        <p>ご相談やお見積りはお気軽にお問い合わせください。</p>
+        <p>ご相談やお見積りのご依頼は以下よりお願いいたします。</p>
+        <p>メール: contact@example.com</p>
+        <p>電話: 03-1234-5678</p>
     </section>
 
     <!-- フッター -->
